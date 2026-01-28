@@ -116,7 +116,7 @@ information without cluttering the main view.
 
 ### Pages:
 The report is divided into three specialized pages with an intuitive navigation system. 
-1. **Main:** High-level overview of general KPIs.  
+### 1. **Main:** High-level overview of general KPIs.  
 ![main](images/main_visualization.png)
 
 
@@ -207,30 +207,30 @@ VAR _profit = [Profit PY]
 RETURN
 DIVIDE(_profit, _sales)
 ```
-2.  **Customers:** Detailed analysis of client behavior and segments.  
+### 2.  **Customers:** Detailed analysis of client behavior and segments.  
 ![Customers](images/customers.png)  
 
 This dashboard provides insights into top customers, profitability, and regional performance.
 
-### KPIs
+#### KPIs
 - Top Customer by Sales with Profit Margin % and % of Total Sales of this customer
 
-### Regional Bar & Line Chart
+#### Regional Bar & Line Chart
 - Sales vs Profit Margin % by region
 
-### Segment Analysis
+#### Segment Analysis
 - Pie chart using a field parameter (Sales or Profit)
 
-### Matrix
+#### Matrix
 - Customer-level metrics including CY, PY, YoY %, Profit Margin %, Avg Discount, Avg Price
 - Field parameters for Customer, Segment, and Country
 
-### Business Questions Answered
+#### Business Questions Answered
 - Who are the most valuable customers and segments?
 - Which regions drive revenue and profit?
 - How do discounts and pricing affect profitability?
 
-### DAX measures
+#### DAX measures
 ```
 Top Customer per Sales = 
 MAXX(
@@ -362,38 +362,41 @@ Avg Price =
 AVERAGE(FactSuperStoreOrders[Price ])
 
 ```
-3.  **Products:** Insights into category performance and product variants.  
-![Products](images/products.png)
-## Products Page
+
+### 3.  **Products:** Insights into category performance and product variants.
+
+![Products](images/products.png)  
+
+#### Products Page
 
 This dashboard focuses on product-level performance and allows flexible analysis using a field parameter for Performance (Sales or Profit).
 
-### KPIs
+#### KPIs
 - Total Quantity Sold
 - Average Discount
 - Total Orders
 - Top Product Sold
 
-### Matrix
+#### Matrix
 - Rows: Category and Product Name
 - Columns: Total (all-time), CY, PY, YoY %, Profit Margin %, Avg Discount, Avg Price
 - Field parameter for Performance (Sales or Profit)
 
-### Hierarchical Analysis
+#### Hierarchical Analysis
 - Field parameter "CalculateSales" allows exploring either Sales or Profit across multiple levels: Segment → Category → Subcategory
 - Users can drill down to see performance by segment, category, and subcategory
 - Supports quick identification of top-performing segments, categories, and subcategories in terms of Sales or Profit
 
-### Visuals
+#### Visuals
 - **Grouped Bar Chart**: Category and Product Name on Y-axis; CY and PY (Sales or Profit) on X-axis
 - **Grouped Column & Line Chart**: Subcategory on X-axis; Column = CalculateSales (Sales or Profit); Line = YoY %
 
-### Business Questions Answered
+#### Business Questions Answered
 - Which products, categories, and subcategories generate the most revenue or profit?
 - How does performance differ across segments and hierarchies?
 - How do discounts and order quantities impact profitability?
 
-### DAX measures
+#### DAX measures
 ```
 Total Orders = COUNTROWS(FactSuperStoreOrders)
 
