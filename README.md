@@ -1,5 +1,8 @@
 # Superstore Sales Analysis - Power BI Project
 
+![SuperStoreSalesProject](images/main_2.png)  
+
+
 ## Project Overview
 This project transforms a flat sales dataset into a professional, relational data model (Star Schema) to analyze business performance. The goal was to clean, normalize, and visualize sales, customer, and product data for better decision-making.
 
