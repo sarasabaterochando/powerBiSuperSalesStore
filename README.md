@@ -1,5 +1,7 @@
 # Superstore Sales Analysis - Power BI Project
 
+[Click to preview](https://app.powerbi.com/view?r=eyJrIjoiZDRlYWJkOGMtOThlOS00NDA4LWIyN2UtN2E4ZDU4OWUwZTkzIiwidCI6IjA5NDZmNDQzLTJjZGItNGNjOS1iN2VhLWUxNmQwZmY0MDEzOCJ9)
+
 ![SuperStoreSalesProject](images/main_2.png)  
 
 
@@ -416,6 +418,7 @@ CONCATENATEX(
 
 Sum Quantity = SUM(FactSuperStoreOrders[Quantity])
 ```
+
 
 
 
